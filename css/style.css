@@ -5,7 +5,7 @@ body {
 p {
     color: darkblue
 }
-h2 {
+h2, h4 {
     color: rgb(55, 1, 59);
 }
 .container {
@@ -41,8 +41,22 @@ h2 {
 .photo {
     max-width: 1200px;
 }
-.achieve-list-item {
-    list-style-image: url('img/check-circle.png');
+.achieve-list {
+    list-style-image: url(../img/check-circle.png);
+    list-style-position: inherit;
+}
+.skills-list {
+    list-style-image: url(../img/check.png);
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    width: 50%;
+}
+.skills-list li {
+    margin-bottom: 10px;
 }
 .motto-section {
     background-image: url(https://images.unsplash.com/photo-1585758942414-7a30b116f2af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
@@ -53,6 +67,9 @@ h2 {
     padding: 20px;
 }
 .motto-section p {
+    color: #fff;
+}
+.motto-section h2 {
     color: #fff;
 }
 .about-me-section img {
@@ -66,4 +83,50 @@ h2 {
 .about-me-images {
     display: flex;
     justify-content: center;
+}
+.contacts-section {
+
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: auto;
+}
+input, textarea {
+    min-height: 20px;
+    margin: 5px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+    border: 1px solid rgb(114, 79, 148);
+    border-radius: 5px;
+}
+
+.submit-button {
+    width: fit-content;
+    height: 40px;
+    color: #fff;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    display: inline-block;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5), 7px 7px 20px 0px rgba(0, 0, 0, .1), 4px 4px 5px 0px rgba(0, 0, 0, .1);
+    background: #2c0b8e;
+}
+
+.submit-button:hover {
+    background-color: #3d348b;
+}
+
+.submit-button:active {
+    top: 2px;
 }
