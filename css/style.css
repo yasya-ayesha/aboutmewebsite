@@ -2,6 +2,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
+p {
+    color: darkblue
+}
+h2 {
+    color: rgb(55, 1, 59);
+}
 .container {
     max-width: 1200px;
     margin: auto;
@@ -9,11 +15,18 @@ body {
 .main-section {
     background-color: rgb(114, 79, 148);
     color: #fff;
+    padding-bottom: 20px;
+}
+.main-section p {
+    color: #fff;
 }
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: rgb(244, 204, 252);
+}
+.header h2{
     color: rgb(244, 204, 252);
 }
 .nav {
@@ -27,4 +40,30 @@ body {
 }
 .photo {
     max-width: 1200px;
+}
+.achieve-list-item {
+    list-style-image: url('img/check-circle.png');
+}
+.motto-section {
+    background-image: url(https://images.unsplash.com/photo-1585758942414-7a30b116f2af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 20px;
+}
+.motto-section p {
+    color: #fff;
+}
+.about-me-section img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgb(114, 79, 148);
+    margin: 30px;
+}
+.about-me-images {
+    display: flex;
+    justify-content: center;
 }
