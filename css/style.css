@@ -3,10 +3,19 @@ body {
     margin: 0;
 }
 p {
-    color: darkblue
+    color: darkblue;
+    line-height: 1.8;
 }
 h2, h4 {
     color: rgb(55, 1, 59);
+}
+h1 {
+    font-size: 48px;
+    margin-top: 40px;
+}
+h2 {
+    font-size: 32px;
+    margin-top: 50px;
 }
 .container {
     max-width: 1200px;
@@ -25,25 +34,45 @@ h2, h4 {
     align-items: center;
     justify-content: space-between;
     color: rgb(244, 204, 252);
+    margin-bottom: 40px;
+    padding-top: 30px;
 }
 .header h2{
     color: rgb(244, 204, 252);
+    text-align: center;
+    font-size: 32px;
+    margin: 0;
 }
 .nav {
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 70%;
     display: flex;
+    justify-content: space-between;
 }
 .nav li {
     padding: 10px;
 }
+.nav a {
+    color: rgb(244, 204, 252);
+    text-decoration: none;
+}
 .photo {
-    max-width: 1200px;
+
+    max-width: 100%;
+}
+.work-list li{
+    padding: 10px;
+    color: darkblue
+}
+.work-list {
+    margin-bottom: 40px;
 }
 .achieve-list {
     list-style-image: url(../img/check-circle.png);
     list-style-position: inherit;
+    margin-bottom: 40px;
 }
 .skills-list {
     list-style-image: url(../img/check.png);
@@ -54,6 +83,7 @@ h2, h4 {
     -moz-column-gap: 20px;
     column-gap: 20px;
     width: 50%;
+    margin-bottom: 40px;
 }
 .skills-list li {
     margin-bottom: 10px;
@@ -63,14 +93,17 @@ h2, h4 {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
     color: #fff;
     padding: 20px;
 }
 .motto-section p {
     color: #fff;
+    margin-bottom: 80px;
 }
 .motto-section h2 {
     color: #fff;
+    margin-top: 80px;
 }
 .about-me-section img {
     width: 200px;
@@ -83,9 +116,7 @@ h2, h4 {
 .about-me-images {
     display: flex;
     justify-content: center;
-}
-.contacts-section {
-
+    margin-bottom: 40px;
 }
 .contacts {
     display: flex;
