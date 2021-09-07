@@ -9,18 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main-section">
+    <div id="top" class="main-section">
         <div class="container">
             <header class="header">
-                <h2 class="my-name">Yaroslava <br> Smielova</h2>
+                <h2 class="my-name">Yaroslava Smielova</h2>
                 <ul class="nav">
-                    <li><a href="#">Work experience</a></li>
-                    <li><a href="#">Achievements</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#work">Work experience</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#contact">Contacts</a></li>
                 </ul>
             </header>
             <img class="photo" src="img/photo-min.jpg" alt="photo: Yasya">
@@ -29,10 +30,10 @@
         </div>
     </div>
     <div class="container">
-        <h2>Work experience</h2>
+        <h2 id="work">Work experience</h2>
         <ol class="work-list">
             <li>
-                <b>since Aug 2021</b> - student at KPS school
+                <b>since Aug 2021</b> - student at KPS school (Fullstack development)
             </li>
             <li>
                 <b>since Oct 2020</b> - freelance designer
@@ -41,7 +42,7 @@
                 <b>Jun 2018 - Sep 2020</b> - senior administrator at Litera hotel
             </li>
         </ol>
-        <h2>Achievements</h2>
+        <h2 id="achievements">Achievements</h2>
         <p>My main achievements in last years</p>
         <ul class="achieve-list">
             <li>
@@ -53,7 +54,7 @@
                 <p>Thanks to my team we have increased hotel rating on Booking.com on 0.2 points (from 8.8 to 9.0)</p>
             </li>
         </ul>
-        <h2>Skills</h2>
+        <h2 id="skills">Skills</h2>
         <ul class="skills-list">
             <li>Figma</li>
             <li>Adobe Photoshop</li>
@@ -75,7 +76,7 @@
     </div>
     <div class="about-me-section">
         <div class="container">
-            <h2>A bit about me</h2>
+            <h2 id="about">A bit about me</h2>
             <p>I love Britain in all its details and dreaming to visit it one day. My hobby is drawing (both digital and regular). I am in love with british music from 70's, especially Pink Floyd. I like cooking and creating new recipes. I have a cat and some plants. My favorite actors are David Tennant and Benedict Cumberbatch, I like to watch films and series they played in. My web nickname is AyeshaLioness.</p>
             <div class="about-me-images">
                 <img src="https://cdn.pixabay.com/photo/2016/09/14/20/50/london-1670432_960_720.png" alt="image: britain">
@@ -85,13 +86,14 @@
         </div>
     </div>
     <div class="contacts-section container">
-        <h2>Contact me</h2>
-        <form class="contacts" action="#">
-            <input type="text">
-            <input type="text">
-                <textarea></textarea>
-            <button class="submit-button" type="submit">Send</button>
+        <h2 id="contact">Contact me</h2>
+        <form class="contacts" action="" method="post" id="main-form">
+            <input type="text" name="name" placeholder="Your name">
+            <input type="mail" name="email" placeholder="Email">
+            <textarea name="message" placeholder="Type your message"></textarea>
+            <input id="submit-button" type="submit" value="Send">
         </form>
     </div>
+    <button class="to-top"><a href="#top"><img class="icon-up" src="/img/arrow-alt-circle-up-regular.svg" alt="arrow up"></a></button>
 </body>
 </html>
